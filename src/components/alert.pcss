@@ -1,13 +1,19 @@
 @layer components {
   .alert {
-    @apply py-3 pl-3 text-neutral-100 rounded-lg flex items-center;
+    @apply py-3 pl-3 rounded-lg;
+    @apply text-neutral-100;
+    @apply flex items-center;
 
-    &.alert-warning {
+    &&-warning {
       @apply bg-warning-10;
     }
 
-    &.alert-success {
+    &&-success {
       @apply bg-success-10;
+    }
+
+    &&-error {
+      @apply bg-white;
     }
 
     &-icon {
@@ -23,8 +29,10 @@
     }
 
     &-close {
-      @apply w-12 h-12 shrink-0 flex items-center justify-center focus:outline-none;
+      @apply w-12 h-12;
+      @apply shrink-0;
+      @apply flex items-center justify-center;
+      @apply focus:outline-none;
     }
   }
-
 }
