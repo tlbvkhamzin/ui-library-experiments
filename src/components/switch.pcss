@@ -1,0 +1,26 @@
+@layer components {
+  .switch {
+    @apply relative p-2 text-xl;
+    @apply flex justify-between items-center;
+    @apply text-sm;
+
+    input[type=checkbox] {
+      @apply absolute;
+      @apply left-1/2 -translate-x-1/2;
+      @apply w-full h-full appearance-none rounded-md;
+
+      &:checked ~ .switch_control {
+        @apply bg-primary-100 after:translate-x-7;
+      }
+    }
+
+    &_control {
+      @apply w-14 h-7;
+      @apply flex items-center flex-shrink-0;
+      @apply ml-4 p-0.5;
+      @apply bg-neutral-35 rounded-full;
+      @apply duration-300 ease-in-out;
+      @apply after:w-6 after:h-6 after:bg-white after:rounded-full after:shadow-md after:duration-300;
+    }
+  }
+}
