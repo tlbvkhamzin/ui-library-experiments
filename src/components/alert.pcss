@@ -1,0 +1,30 @@
+@layer components {
+  .alert {
+    @apply py-3 pl-3 text-neutral-100 rounded-lg flex items-center;
+
+    &.alert-warning {
+      @apply bg-warning-10;
+    }
+
+    &.alert-success {
+      @apply bg-success-10;
+    }
+
+    &-icon {
+      @apply mr-3;
+    }
+
+    &-title {
+      @apply font-medium leading-5 mb-1;
+    }
+
+    &-text {
+      @apply text-sm;
+    }
+
+    &-close {
+      @apply w-12 h-12 shrink-0 flex items-center justify-center focus:outline-none;
+    }
+  }
+
+}

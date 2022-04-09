@@ -1,0 +1,13 @@
+@layer components {
+
+  .btn {
+    @apply p-3 bg-primary-100 hover:bg-primary-150 active:bg-primary-150 disabled:bg-primary-30;
+    @apply text-white leading-5 rounded-lg;
+    @apply focus:outline-none focus:ring focus:ring-primary-150 focus:ring-opacity-50;
+    @apply transition ease-in-out duration-150;
+
+    &.btn-sm {
+      @apply py-2 px-3 text-sm;
+    }
+  }
+}
